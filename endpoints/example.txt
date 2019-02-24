@@ -1,0 +1,49 @@
+
+function main($db, $method, $func, $args)
+{
+    switch($method)
+    {
+        case 'GET':
+            switch($func)
+            {
+                default:
+                    _response(Array('error' => 'Invalid Function:'.$func), 404);
+            }
+            break;
+
+        case 'POST':
+            switch($func)
+            {
+                case "add": //Добавление пользователя
+                            //Параметры:
+                            //login - Логин нового пользователя
+                            //pass - Пароль нового пользователя
+                    if(array_key_exists('login',$args)&&array_key_exists('pass',$args))
+                    {
+
+                    }
+                    else
+                        _response(Array('error' => 'Указаны не все параметры для функции '.$func.' метода '.$method), 404);
+                    break;
+                default:
+                    _response(Array('error' => 'Invalid Function:'.$func), 404);
+            }
+            break;
+
+        case 'PATCH':
+            switch($func)
+            {
+                default:
+                    _response(Array('error' => 'Invalid Function:'.$func), 404);
+            }
+            break;
+
+        case 'DELETE':
+            switch($func)
+            {
+                default:
+                    _response(Array('error' => 'Invalid Function:'.$func), 404);
+            }
+            break;
+    }
+}
