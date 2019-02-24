@@ -18,10 +18,10 @@ function getPortalsById($Id)
 			$resp[$i] =  $arr['Portal'];
 			$i++;
 		}
-		_response(Array('Result' =>$resp));
+		return(Array('Result' =>$resp));
 	}
 	else {
-		_response(Array('Result' => 'None'));
+		return(Array('Result' => 'None'));
 	}
 }
 
@@ -41,10 +41,9 @@ function getisExists($portal)
 	$row = mysqli_fetch_row($res);
 	if($row[0]!=0)
 	{
-		_response(Array('Result' => 'Ok'));
-		return;
+		return(Array('Result' => 'Ok'));
 	}
-	_response(Array('Result' => 'Failure'));
+	return(Array('Result' => 'Failure'));
 }
 
 //Проверяем имеет ли пользователь доступ к порталу
@@ -63,10 +62,9 @@ function getaccessUserForPortal($portal ,$ID_User)
 	$row = mysqli_fetch_row($res);
 	if($row[0]!=0)
 	{
-		_response(Array('Result' => 'Yes'));
-		return;
+		return(Array('Result' => 'Yes'));
 	}
-	_response(Array('Result' => 'No'));
+	return(Array('Result' => 'No'));
 }
 
 //Добавление пользователя в портал
@@ -86,8 +84,7 @@ function postAddUserToPortal($userId, $portal)
 	$row = mysqli_fetch_row($res);
 	if($row[0]==0)
 	{
-		_response(Array('error' => 'Пользователь с ID '.$userId.' отсутствует'));
-		return;
+		return(Array('error' => 'Пользователь с ID '.$userId.' отсутствует'));
 	}
 
 	//Проверяем сущетвует ли портал
@@ -100,8 +97,7 @@ function postAddUserToPortal($userId, $portal)
 	$row = mysqli_fetch_row($res);
 	if($row[0]==0)
 	{
-		_response(Array('error' => 'Портал '.$portal.' уже существует'));
-		return;
+		return(Array('error' => 'Портал '.$portal.' уже существует'));
 	}
 
 	//Проверяем Привязан ли пользователь к порталу
@@ -114,8 +110,7 @@ function postAddUserToPortal($userId, $portal)
 	$row = mysqli_fetch_row($res);
 	if($row[0]!=0)
 	{
-		_response(Array('error' => 'Пользователь '.$userId.' уже привязан к порталу '.$portal));
-		return;
+		return(Array('error' => 'Пользователь '.$userId.' уже привязан к порталу '.$portal));
 	}
 
 	//Если не суещствует, то создаем привязку
@@ -126,7 +121,7 @@ function postAddUserToPortal($userId, $portal)
 	if(!mysqli_query($GLOBALS['db'], $query))
 		throw new Exception( 'Ошибка добавления пользователя:'.mysqli_error($GLOBALS['db']), 405);
 
-	_response(Array('Result' => 'Ok'));
+	return(Array('Result' => 'Ok'));
 }
 
 function main($method, $func, $args)
@@ -142,21 +137,21 @@ function main($method, $func, $args)
 
 				case "isExists":
 				if(array_key_exists('portal',$args))
-					getisExists($args['portal']);
+					_response(getisExists($args['portal']));
 				else
 					throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 				break;
 
 				case "getPortalsById":
 					if(array_key_exists('Id',$args))
-						getPortalsById($args['Id']);
+						_response(getPortalsById($args['Id']));
 					else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
 
 				case 'accessUserForPortal':
 					if(array_key_exists('Portal',$args)&&array_key_exists('ID_User',$args))
-						getaccessUserForPortal($args['Portal'],$args['ID_User']);
+						_response(getaccessUserForPortal($args['Portal'],$args['ID_User']));
 					else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
@@ -175,7 +170,7 @@ function main($method, $func, $args)
 
 					case "addUserToPortal":
 						if(array_key_exists('userId',$args)&&array_key_exists('portal',$args))
-							postAddUserToPortal($args['userId'],$args['portal']);
+							_response(postAddUserToPortal($args['userId'],$args['portal']));
 						else
 							throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 						break;

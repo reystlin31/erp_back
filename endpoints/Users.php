@@ -32,7 +32,7 @@ function getUserInfoById($Id)
 		if (!$res)
 			throw new Exception( 'Произошла ошибка:'.mysqli_error($GLOBALS['db']), 405);
 
-		_response(mysqli_fetch_assoc($res));
+		return(mysqli_fetch_assoc($res));
 	}
 
 }
@@ -62,7 +62,7 @@ function getIDbyToken($token)
 		if (!$res)
 			throw new Exception( 'Произошла ошибка:'.mysqli_error($GLOBALS['db']), 405);
 
-		_response(Array('ID_User' => mysqli_fetch_assoc($res)['ID_User']));
+		return(Array('ID_User' => mysqli_fetch_assoc($res)['ID_User']));
 	}
 
 }
@@ -79,7 +79,7 @@ function getLogout($token)
 	if ( !$res )
 		throw new Exception( 'Произошла ошибка:'.mysqli_error($GLOBALS['db']), 405);
 
-	_response(Array('Status' => 'Ok'));
+	return(Array('Status' => 'Ok'));
 }
 
 //Добавление пользователя
@@ -105,8 +105,7 @@ function postAdd($login, $pass, $email, $name, $patronymic,
 	$row = mysqli_fetch_row($res);
 	if($row[0]!=0)
 	{
-		_response(Array('error' => 'Пользователь с именем '.$login.' уже существует'));
-		return;
+		return(Array('error' => 'Пользователь с именем '.$login.' уже существует'));
 	}
 
 	//Проверяем сущетвует ли пользователь с таким E-Mail
@@ -119,8 +118,7 @@ function postAdd($login, $pass, $email, $name, $patronymic,
 	$row = mysqli_fetch_row($res);
 	if($row[0]!=0)
 	{
-		_response(Array('error' => 'Пользователь с E-Mail '.$email.' уже существует'));
-		return;
+		return(Array('error' => 'Пользователь с E-Mail '.$email.' уже существует'));
 	}
 
 	//Если не суещствует, то создаем пользователя
@@ -133,7 +131,7 @@ function postAdd($login, $pass, $email, $name, $patronymic,
 	if(!mysqli_query($GLOBALS['db'], $query))
 		throw new Exception( 'Ошибка добавления пользователя:'.mysqli_error($GLOBALS['db']), 405);
 
-	_response(Array('ID' => mysqli_insert_id($GLOBALS['db'])));
+	return(Array('ID' => mysqli_insert_id($GLOBALS['db'])));
 }
 
 //Генерация токена авторизации по логину и паролю
@@ -143,7 +141,6 @@ function postAdd($login, $pass, $email, $name, $patronymic,
 function postAuth($login, $pass)
 {
 
-	$return = array();
 	//Промеряем существует ли пользователь с таким логином
 	$query="SELECT COUNT(*) FROM `Users` WHERE `login`='".$login."';";
 	$res = mysqli_query($GLOBALS['db'],$query);
@@ -154,7 +151,7 @@ function postAuth($login, $pass)
 	$row = mysqli_fetch_row($res);
 
 	if($row[0]==0)
-		_response(Array('error' => "Пользователя с логином ".$login." не существует"));
+		return(Array('error' => "Пользователя с логином ".$login." не существует"));
 	else
 	{
 		//Проверяем пароль
@@ -177,10 +174,10 @@ function postAuth($login, $pass)
 			if(!mysqli_query($GLOBALS['db'],$query))
 				throw new Exception( 'Произошла ошибка создания токена:'.mysqli_error($GLOBALS['db']), 405);
 
-			_response(Array('Token' => $Token));
+			return(Array('Token' => $Token));
 		}
 		else
-			_response(Array('error' => "Пароль введен не верно"));
+			return(Array('error' => "Пароль введен не верно"));
 	}
 }
 
@@ -197,21 +194,21 @@ function main($method, $func, $args)
 
 				case "UserInfoById":
 					if(array_key_exists('Id',$args))
-						getUserInfoById($args['Id']);
+						_response(getUserInfoById($args['Id']));
 					else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
 
 				case "IDbyToken":
 					if(array_key_exists('token',$args))
-						getIDbyToken($args['token']);
+						_response(getIDbyToken($args['token']));
 					else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
 
 				case "Logout":
 					if(array_key_exists('token',$args))
-						getLogout($args['token']);
+						_response(getLogout($args['token']));
 					else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
@@ -233,9 +230,9 @@ function main($method, $func, $args)
 						array_key_exists('email',$args)&&array_key_exists('name',$args)&&
 						array_key_exists('patronymic',$args)&&array_key_exists('surname',$args)&&
 						array_key_exists('personal_phone',$args)&&array_key_exists('birthday',$args))
-						postAdd($args['login'], $args['pass'], $args['email'],
+						_response(postAdd($args['login'], $args['pass'], $args['email'],
 							$args['name'], $args['patronymic'], $args['surname'],
-							$args['personal_phone'],$args['birthday']);
+							$args['personal_phone'],$args['birthday']));
 
                     else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
@@ -243,7 +240,7 @@ function main($method, $func, $args)
 
 				case 'auth':
 					if(array_key_exists('login',$args)&&array_key_exists('pass',$args))
-						postAuth($args['login'], $args['pass']);
+						_response(postAuth($args['login'], $args['pass']));
 					else
 						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
