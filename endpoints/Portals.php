@@ -146,7 +146,7 @@ function main($method, $func, $args)
 					if(array_key_exists('Id',$args))
 						_response(getPortalsById($args['Id']));
 					else
-						throw new Exception( 'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
+						throw new Exception( print_r($args,true).'Указаны не все параметры для функции '.$func.' метода '.$method, 405);
 					break;
 
 				case 'accessUserForPortal':

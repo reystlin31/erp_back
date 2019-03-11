@@ -25,7 +25,7 @@ function getUserInfoById($Id)
 	else
 	{
 		//Находим пользователя с этим токеном
-		$query = "SELECT `EMail`,`Name`,`Patronymic`,
+		$query = "SELECT `Email`,`Name`,`Patronymic`,
  			`Surname`,`Personal_Phone`,`Birthday` FROM `Users` WHERE `ID`='" . $Id . "';";
 		$res = mysqli_query($GLOBALS['db'], $query);
 

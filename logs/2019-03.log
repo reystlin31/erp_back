@@ -1,0 +1,964 @@
+
+=======================
+[2019-03-10 20:36:39]
+Response code: 404	Response: No Function
+Endpoint: 	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-10 20:36:40]
+Response code: 404	Response: No Function
+Endpoint: favicon.ico	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-10 20:38:38]
+Response code: 405	Response: Invalid endpoint:users
+Endpoint: users	Method: GET	Function: auth	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 01:37:30]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 01:37:31]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 01:37:54]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 01:37:54]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 01:44:27]
+Response code: 404	Response: No Function
+Endpoint: 	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 01:44:27]
+Response code: 404	Response: No Function
+Endpoint: favicon.ico	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:05:02]
+Response code: 404	Response: No Function
+Endpoint: 	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:05:02]
+Response code: 404	Response: No Function
+Endpoint: favicon.ico	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:08:45]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:09:02]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:10:53]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:14:47]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:20:52]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 02:20:56]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 02:22:23]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 02:23:31]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 02:23:32]
+В настоящий момент сервер базы данных не доступен
+=======================
+[2019-03-11 02:25:17]
+Response code: 404	Response: No Function
+Endpoint: 	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:25:17]
+Response code: 404	Response: No Function
+Endpoint: favicon.ico	Method: 0	Function: 0	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:26:30]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:31:49]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:38:42]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:39:49]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:41:50]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 02:41:54]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 02:42:13]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 02:50:24]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 02:56:22]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 02:56:47]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 02:57:06]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:02:40]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:03:49]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:05:08]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test1
+)
+
+=======================
+[2019-03-11 03:05:59]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:06:04]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:18:27]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:19:14]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:19:25]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:19:28]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:20:00]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:20:36]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:20:43]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:22:26]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:22:39]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:23:02]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:23:35]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:23:50]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:24:06]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:36:44]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:37:19]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:38:20]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:39:06]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:39:32]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:42:05]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:43:14]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:44:26]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:46:09]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:46:46]
+Response code: 405	Response: Array
+(
+)
+Указаны не все параметры для функции getPortalsById метода GET
+Endpoint: Portals	Method: GET	Function: getPortalsById	Args:
+Array
+(
+)
+
+=======================
+[2019-03-11 03:48:41]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:49:49]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:49:55]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:50:22]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:50:28]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:51:40]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 03:55:17]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:00:15]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:00:27]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:00:31]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:01:31]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:19:55]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:20:01]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:20:17]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:20:48]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:21:00]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:21:30]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:21:36]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 04:21:46]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:04:08]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:04:14]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:06:45]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:06:49]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:07:12]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:08:18]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:12:51]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:12:56]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:13:17]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:13:36]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:13:44]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:13:54]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:14:11]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:14:18]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:14:43]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:14:58]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:14:59]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:15:09]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:15:16]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:15:28]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Finanse
+)
+
+=======================
+[2019-03-11 11:34:03]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:35:05]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:35:12]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:37:26]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:41:26]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:53:57]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
+
+=======================
+[2019-03-11 11:54:04]
+Response code: 405	Response: Указаны не все параметры для функции accessUserForPortal метода GET
+Endpoint: Portals	Method: GET	Function: accessUserForPortal	Args:
+Array
+(
+    [Portal] => Test
+)
