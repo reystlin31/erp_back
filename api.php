@@ -12,6 +12,27 @@ error_reporting(E_ALL | E_STRICT);
 // определяем режим вывода ошибок
 ini_set('display_errors', 'On');
 
+require_once "Functions.php";
+
+//Коннект к MySQL
+$db = mysqli_connect($hostname,$username,$password,$dbName);
+if (!$db)
+{
+    _response(Array('error' => 'В настоящий момент сервер базы данных не доступен'), 404);
+    logFile('В настоящий момент сервер базы данных не доступен'.mysqli_error());
+    exit();
+}
+/*
+// в какой кодировке получать данные от клиента
+@mysqli_query('set character_set_client="utf8"');
+
+// в какой кодировке получать данные от БД для вывода клиенту
+@mysqli_query('set character_set_results="utf8"');
+
+// кодировка в которой будут посылаться служебные команды для сервера
+@mysqli_query('set collation_connection="utf8_general_ci"');
+*/
+
 $endpoint = 0;        //класс к которому обращаемся
 $method = 0;          //метод обращения
 $func = 0;          //Вызываемя функция
@@ -67,14 +88,19 @@ try
 
 			header("Access-Control-Allow-Origin: *");
 			header("Access-Control-Allow-Methods: GET, POST, PATCH, DELETE, OPTIONS");
-			header('Access-Control-Allow-Headers: Origin, Content-Type');
+			header('Access-Control-Allow-Headers: origin, x-requested-with, content-type,access-control-allow-origin');
 			exit(0);
 			break;
 
         default:
 			throw new Exception('Invalid Method:'.$method, 405);
     }
-
+/*
+	echo "endpoint:".$endpoint;        //класс к которому обращаемся через API
+	echo "<br>method:".$method;          //метод обращения
+	echo "<br>func:".$func;          //Вызываемя функция
+	echo "<br>reqest:";print_r(array_merge($args,$request));         //параметры функции
+*/
     //Проверяем существует ли вызываемый эндпоинт и вызываем из него основную функцию
    	switch ($endpoint)
 	{
@@ -91,10 +117,6 @@ try
 	}
 		
 
-//    echo "endpoint:".$endpoint;        //класс к которому обращаемся через API
-//    echo "<br>method:".$method;          //метод обращения
-//    echo "<br>func:".$func;          //Вызываемя функция
-//    echo "<br>reqest:";print_r(array_merge($args,$request));         //параметры функции
 
 }
 catch (Exception $e)
