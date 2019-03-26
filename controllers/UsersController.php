@@ -8,7 +8,7 @@ class UsersController extends ApiController
 {
     public $modelClass = Users::class;
 
-    public function actionAuth()
+    public function actionGetByToken($token)
     {
         return Users::find()->select('Name')->all();
     }

@@ -12,7 +12,7 @@ use Yii;
  * @property string $Create_Date
  * @property string $Last_Visit
  *
- * @property Users $user
+ * @property User $user
  */
 class UserToken extends \yii\db\ActiveRecord
 {
@@ -35,7 +35,7 @@ class UserToken extends \yii\db\ActiveRecord
             [['Create_Date', 'Last_Visit'], 'safe'],
             [['Token'], 'string', 'max' => 32],
             [['Token'], 'unique'],
-            [['ID_User'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['ID_User' => 'ID']],
+            [['ID_User'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['ID_User' => 'ID']],
         ];
     }
 
@@ -57,6 +57,6 @@ class UserToken extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(Users::className(), ['ID' => 'ID_User']);
+        return $this->hasOne(User::className(), ['ID' => 'ID_User']);
     }
 }

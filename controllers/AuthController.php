@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use app\models\UserToken;
 use app\models\User;
+use yii\db\Expression;
 
 class AuthController extends \yii\rest\ActiveController
 {
@@ -12,41 +13,48 @@ class AuthController extends \yii\rest\ActiveController
 
     public function actionLogin()
     {
-        $params = \Yii::$app->request->getBodyParams();
-        return $params;
-        $users = User::find()->where(['login' => $params['login']])->all();
+        $params = \Yii::$app->request->post();
+        
+        ApiController::CheckInputParams(['login' => 0, 'pass' => 0], $params);
+
+        $users = User::find()->where(['login' => $params['login']])->limit(1)->one();
+
         if(!$users)//Пользователь не найден
             return $this->asjson(['error' => 'Пользователь с логином '. $params['login'].' не обнаружен']);
-        if($users['pass'] == $params['pass'])
+
+        if($users['pass'] == md5(md5($params['pass'])))
         { //Пользователь авторизован
-            return $this->asjson(['toekn' => '111']);
+            $Token = $this->generateCode();
+
+            $TokenRecord = new UserToken;
+
+            $TokenRecord->ID_User = $users->ID; 
+            $TokenRecord->Token = $Token;
+            $TokenRecord->Create_Date = new Expression('NOW()');
+            $TokenRecord->Last_Visit = new Expression('NOW()');
+
+            $TokenRecord->save();
+
+            return $this->asjson(['token' => $Token ]);
         }
         else
         { //не верный пароль
             return $this->asjson(['error' => 'Пароль введен не верно']);
         }
     }
-    function actionABC() {
-        self::functionCheckInputParams(['a', 'b', 'c'], \Yii::$app->request->post());
-        $this->doABC ($a,$b,$c);
-    }
 
-    function doABC ($a,$b,$c) {
-    echo $a,$b,$c;
-    }
-
-    static function CheckInputParams($inputCheckNeed, $currentParams)
-    {
-        if ( count(array_intersect_key($inputCheckNeed,$currentParams)) !== count($inputCheckNeed) )
-            throw new Exception('Не все требуемые параметры переданы.');
-        return true;
-    }
     public function actionLogout($token)
     {
+        UserToken::deleteAll(['Token' => $token]);
         return json_encode(['Result'=>'Ok']);
     }
 
     public function actionRegister()
+    {
+
+    }
+
+    public function actionRememberPassword()
     {
 
     }
@@ -57,7 +65,7 @@ class AuthController extends \yii\rest\ActiveController
              'http://localhost',
         ];
     }
-    
+
     public function behaviors()
     {
         $behaviors = parent::behaviors();
@@ -84,13 +92,17 @@ class AuthController extends \yii\rest\ActiveController
         ];
         return $behaviors;
     }
-    public $enableCsrfValidation = false;
-    public function actions()
+
+    // Функция для генерации случайной строки
+    public function generateCode($length=6)
     {
-        return [
-            'options' => [
-                'class' => 'yii\rest\OptionsAction',
-            ],
-        ];
+        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPRQSTUVWXYZ0123456789";
+        $code = "";
+        $clen = strlen($chars) - 1;
+        while (strlen($code) < $length)
+            $code .= $chars[mt_rand(0,$clen)];
+        return $code;
     }
+
+        
 }
