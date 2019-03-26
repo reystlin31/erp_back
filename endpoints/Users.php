@@ -72,7 +72,7 @@ function getIDbyToken($token)
 // @param Status - статус
 function getLogout($token)
 {
-	//Проверяем токен
+	//Удаляем токен
 	$query="DELETE FROM `Users_Tokens` WHERE `Token`='".$token."';";
 	$res = mysqli_query($GLOBALS['db'],$query);
 

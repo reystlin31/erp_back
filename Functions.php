@@ -25,14 +25,14 @@ function _response($data, $status = 200)
 {
 	header('HTTP/1.1 200 OK');
 
-	if(isset($_SERVER["HTTP_ORIGIN"]))
+	/*if(isset($_SERVER["HTTP_ORIGIN"]))
 		header("Access-Control-Allow-Origin: ".$_SERVER['HTTP_ORIGIN']);
-	else
+	else*/
 	    header("Access-Control-Allow-Origin: *");
 	header("Access-Control-Allow-Methods: GET, POST, PATCH, DELETE, OPTIONS");
     header('Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, access-control-allow-origin ');
    // header("Access-Control-Allow-Headers: ".$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']);
-   // header("Access-Control-Allow-Origin: ".$_SERVER['HTTP_ORIGIN']);
+    //header("Access-Control-Allow-Origin: ".$_SERVER['HTTP_ORIGIN']);
     //header('Access-Control-Allow-Methods: POST, GET, PUT, DELETE, OPTIONS');
     //header('Access-Control-Allow-Headers: X-Requested-With, content-type');
 	echo json_encode($data);

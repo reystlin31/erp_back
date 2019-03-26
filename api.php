@@ -95,8 +95,8 @@ try
         default:
 			throw new Exception('Invalid Method:'.$method, 405);
     }
-/*
-	echo "endpoint:".$endpoint;        //класс к которому обращаемся через API
+
+/*	echo "endpoint:".$endpoint;        //класс к которому обращаемся через API
 	echo "<br>method:".$method;          //метод обращения
 	echo "<br>func:".$func;          //Вызываемя функция
 	echo "<br>reqest:";print_r(array_merge($args,$request));         //параметры функции
@@ -111,7 +111,15 @@ try
 		case 'Portals':
 			include_once ("endpoints/Portals.php");
 			main($method, $func, array_merge($args, $request));
-			break;
+            break;
+        case 'Modules':
+			include_once ("endpoints/Modules.php");
+			main($method, $func, array_merge($args, $request));
+            break;
+        case 'M_FixService':
+			include_once ("endpoints/Modules/M_FixService.php");
+			main($method, $func, array_merge($args, $request));
+            break;
 		default:
 			throw new Exception('Invalid endpoint:'.$endpoint, 405);
 	}
