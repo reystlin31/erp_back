@@ -15,7 +15,7 @@ class AuthController extends \yii\rest\ActiveController
     {
         $params = \Yii::$app->request->post();
         
-        ApiController::CheckInputParams(['login' => 0, 'pass' => 0], $params);
+        ApiController::CheckInputParams(['login' , 'pass'], $params);
 
         $users = User::find()->where(['login' => $params['login']])->limit(1)->one();
 

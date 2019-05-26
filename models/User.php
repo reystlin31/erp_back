@@ -160,4 +160,9 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(UsersTokens::className(), ['ID_User' => 'ID']);
     }
+
+    public function setToken($token)
+    {
+        $this->ID = UserToken::findOne(['Token'=>$token])->ID_User;
+    }
 }
